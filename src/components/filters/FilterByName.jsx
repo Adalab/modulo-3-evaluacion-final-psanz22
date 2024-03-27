@@ -1,5 +1,6 @@
 function FilterByName({ onChangeName }) {
   const handleChangeName = (event) => {
+    event.preventDefault();
     onChangeName(event.target.value);
   };
   return (

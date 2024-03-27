@@ -1,4 +1,4 @@
-function FilterByName({ onChangeName }) {
+function FilterByName({ onChangeName, filterName }) {
   const handleChangeName = (event) => {
     onChangeName(event.target.value);
   };
@@ -13,6 +13,7 @@ function FilterByName({ onChangeName }) {
       <input
         id="name"
         type="text"
+        value={filterName}
         onChange={handleChangeName}
         onKeyDown={handleKeyDown}
       />

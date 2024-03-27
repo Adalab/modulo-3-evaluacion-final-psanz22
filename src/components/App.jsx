@@ -6,10 +6,13 @@ import getCharactersFromAPI from "../services/getCharactersFromAPI";
 import CharactersList from "./CharactersList";
 import Filters from "./filters/Filters";
 import CharacterDetail from "./CharacterDetail";
+import localStorageServices from "../services/localStorage";
 
 function App() {
   const [characters, setCharacters] = useState([]);
-  const [filterName, setFilterName] = useState("");
+  const [filterName, setFilterName] = useState(
+    localStorageServices.get("searchedCharacter", "")
+  );
 
   const onChangeName = (value) => {
     setFilterName(value);
@@ -25,6 +28,10 @@ function App() {
       console.log(charactersData);
     });
   }, []);
+
+  useEffect(() => {
+    localStorageServices.set("searchedCharacter", filterName);
+  }, [filterName]);
 
   const { pathname } = useLocation();
   console.log("pathname", pathname);
@@ -52,7 +59,7 @@ function App() {
             path="/"
             element={
               <>
-                <Filters onChangeName={onChangeName} />
+                <Filters onChangeName={onChangeName} filterName={filterName} />
                 <CharactersList characters={filteredCharacters} />
               </>
             }

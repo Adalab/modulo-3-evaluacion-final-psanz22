@@ -1,10 +1,10 @@
 import FilterByName from "./FilterByName";
 
-function Filters({ onChangeName }) {
+function Filters({ onChangeName, filterName }) {
   return (
     <div>
       <h3>Filtro</h3>
-      <FilterByName onChangeName={onChangeName} />
+      <FilterByName onChangeName={onChangeName} filterName={filterName} />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import "../../scss/components/FilterByName.scss";
+
 function FilterByName({ onChangeName, filterName }) {
   const handleChangeName = (event) => {
     onChangeName(event.target.value);
@@ -9,7 +11,7 @@ function FilterByName({ onChangeName, filterName }) {
   };
   return (
     <form>
-      <label htmlFor="name">Por nombre</label>
+      <label htmlFor="name">Filtra por nombre</label>
       <input
         id="name"
         type="text"

@@ -7,6 +7,7 @@ import CharactersList from "./CharactersList";
 import Filters from "./filters/Filters";
 import CharacterDetail from "./CharacterDetail";
 import localStorageServices from "../services/localStorage";
+import Logo from "../images/Logo.png";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -51,7 +52,9 @@ function App() {
   return (
     <>
       <header>
-        <h1>Rick and Morty</h1>
+        <h1>
+          <img src={Logo} alt="Rick & Morty Logo" />
+        </h1>
       </header>
       <main>
         <Routes>
@@ -70,6 +73,7 @@ function App() {
           />
         </Routes>
       </main>
+      <footer> Waba Laba Dub Dub!!</footer>
     </>
   );
 }

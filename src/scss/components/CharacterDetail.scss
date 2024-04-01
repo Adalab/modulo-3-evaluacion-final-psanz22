@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Glitch";
+  src: url("../../fonts/NewGlitchDemoRegular.ttf") format("truetype");
+}
+
+.card {
+  color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+.nameCharacter {
+  margin: 20px 0 10px 0;
+  font-size: 30px;
+  font-family: Glitch;
+  color: aquamarine;
+}
+.pictureDetail {
+  border-radius: 1rem;
+  border: 2px outset aqua;
+}

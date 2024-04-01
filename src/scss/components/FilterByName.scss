@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Glitch";
+  src: url("../../fonts/NewGlitchDemoRegular.ttf") format("truetype");
+}
+
+label {
+  color: white;
+  font-family: Glitch;
+  font-size: 30px;
+  color: yellowgreen;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  padding: 10px;
+  border-radius: 1rem;
+  width: 400px;
+}

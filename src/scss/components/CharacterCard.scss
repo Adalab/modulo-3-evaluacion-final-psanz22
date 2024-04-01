@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Nevermine";
+  src: url("../../fonts/NevermineDEMO.otf") format("truetype");
+}
+@font-face {
+  font-family: "Glitch";
+  src: url("../../fonts/NewGlitchDemoRegular.ttf") format("truetype");
+}
+
+.name,
+.species {
+  text-align: center;
+}
+
+.name {
+  font-size: 30px;
+  // font-family: Nevermine;
+}
+
+li {
+  margin: 10px;
+}
+.Link {
+  color: aqua;
+  text-shadow: -5px -7px 13px yellowgreen;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Nevermine;
+}
+.Link:hover {
+  color: yellowgreen;
+  text-shadow: -5px -7px 13px aqua;
+  font-family: Glitch;
+  font-size: 20px;
+}
+
+.pictures {
+  border-radius: 1rem;
+  border: 4px outset darkcyan;
+}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Nevermine";
+  src: url("../../fonts/NevermineDEMO.otf") format("truetype");
+}
+
+img {
+  width: 400px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: black;
+}
+footer {
+  background-color: black;
+  height: 50px;
+  color: aqua;
+  text-align: center;
+  font-family: Nevermine;
+  font-size: 30px;
+}
